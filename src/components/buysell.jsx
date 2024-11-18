@@ -56,7 +56,7 @@ const BuySell = () => {
       <img
         src={service.image}
         alt={service.name}
-        className="w-full h-40 object-cover"
+        className="w-full h-40 object-contain"
       />
       {/* Service Details */}
       <div className="p-4 border-t-2 border-blue-600">

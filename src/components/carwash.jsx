@@ -1,5 +1,5 @@
 import React from "react";
-import locationIcon from "../assets/location.png"
+import locationIcon from "../assets/location.png";
 import carwashImg from "../assets/download 28.png"; // Replace with your carwash image path
 
 const CarWash = () => {
@@ -32,7 +32,7 @@ const CarWash = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-8 px-10">
+    <section className="bg-gray-50 py-8 px-4 sm:px-6 lg:px-10">
       <div className="w-full">
         {/* Title */}
         <div className="flex justify-between items-center mb-6">
@@ -42,11 +42,11 @@ const CarWash = () => {
           </h6>
         </div>
         {/* Car Wash Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {carWashServices.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg  p-4 flex flex-col items-center"
+              className="bg-white rounded-lg p-4 flex flex-col items-center"
             >
               <div className="flex items-center w-full">
                 {/* Image on Left */}
@@ -67,7 +67,7 @@ const CarWash = () => {
                     />
                     <p>{service.location}</p>
                   </div>
-                  <p className="mt-1 text-sm text-center  px-3 py-2 bg-blue-600 text-white rounded-xl">
+                  <p className="mt-1 text-sm text-center px-3 py-2 bg-blue-600 text-white rounded-xl">
                     Total Orders: {service.orders}
                   </p>
                 </div>

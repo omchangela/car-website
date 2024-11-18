@@ -6,6 +6,8 @@ import UserLogin from './pages/UserLogin';
 import UserRegister from './pages/UserRegister';
 import VendorLogin from './pages/VendorLogin';
 import VendorRegister from './pages/VendorRegister';
+import Allcar from './pages/allcar';
+import CarDetails from './pages/CarDetails'; // Import your CarDetails component
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
         
         <Route path="/vendorlogin" element={<VendorLogin />} />
         <Route path="/vendorsignup" element={<VendorRegister />} />
-        
+        <Route path="/allcar" element={<Allcar />} />
+        <Route path="/car-details/:carId" element={<CarDetails />} /> {/* Dynamic route for car details */}
+
       </Routes>
     </Router>
   );

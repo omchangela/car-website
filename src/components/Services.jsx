@@ -33,9 +33,9 @@ const Services = () => {
         <h3 className="text-xl font-semibold mt-2">Our Services</h3>
       </div>
 
-      {/* Services in one line */}
+      {/* Services in one line with gap and responsiveness */}
       <div className="container mx-auto overflow-x-auto">
-        <div className="flex items-center px-3">
+        <div className="flex items-center px-3 gap-4 sm:gap-6 md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6">
           {serviceData.map((service, index) => (
             <div key={index} className="text-center min-w-[120px]">
               <img
